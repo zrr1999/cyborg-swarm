@@ -1,0 +1,9 @@
+[package]
+name = "swarm-combat"
+version = "0.1.0"
+edition = "2024"
+rust-version.workspace = true
+
+[dependencies]
+bevy_ecs = "0.18.1"
+swarm-model = { path = "../swarm-model" }

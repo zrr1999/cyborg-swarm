@@ -1,0 +1,8 @@
+(
+    id: "duel",
+    name: "南北天堑",
+    bases: [
+        (role: Player, x: 0.0, y: 225.0),
+        (role: Enemy, x: 0.0, y: -225.0),
+    ],
+)

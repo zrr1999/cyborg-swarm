@@ -1,0 +1,28 @@
+[package]
+name = "swarm-sim"
+version = "0.1.0"
+edition = "2024"
+rust-version.workspace = true
+
+[dependencies]
+bevy = { workspace = true, optional = true }
+bevy_ecs = "0.18.1"
+bevy_math = "0.18.1"
+bevy_time = "0.18.1"
+bevy_transform = "0.18.1"
+clap = { version = "4.6.1", features = ["derive"] }
+rand = { workspace = true }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+swarm-combat = { path = "../swarm-combat" }
+swarm-model = { path = "../swarm-model" }
+swarm-space = { path = "../swarm-space" }
+swarm-tactics = { path = "../swarm-tactics" }
+
+[features]
+default = []
+sim_bevy = ["dep:bevy"]
+
+[[bin]]
+name = "swarm-record"
+path = "src/bin/swarm-record.rs"

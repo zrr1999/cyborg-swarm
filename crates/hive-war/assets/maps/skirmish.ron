@@ -1,0 +1,11 @@
+(
+    id: "skirmish",
+    name: "碎岛链",
+    bases: [
+        (role: Player, x: -385.0, y: 115.0),
+        (role: Enemy, x: 390.0, y: -95.0),
+        (role: Neutral, x: -95.0, y: -55.0, hint: "shard_a"),
+        (role: Neutral, x: 95.0, y: 155.0, hint: "shard_b"),
+        (role: Neutral, x: 265.0, y: 45.0, hint: "shard_c"),
+    ],
+)

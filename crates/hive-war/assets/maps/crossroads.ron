@@ -1,0 +1,13 @@
+(
+    id: "crossroads",
+    name: "十字要塞",
+    bases: [
+        (role: Player, x: -385.0, y: 0.0),
+        (role: Enemy, x: 385.0, y: 0.0),
+        (role: Neutral, x: 0.0, y: 0.0, hint: "hub"),
+        (role: Neutral, x: 0.0, y: 118.0, hint: "n"),
+        (role: Neutral, x: 0.0, y: -118.0, hint: "s"),
+        (role: Neutral, x: 118.0, y: 0.0, hint: "e"),
+        (role: Neutral, x: -118.0, y: 0.0, hint: "w"),
+    ],
+)

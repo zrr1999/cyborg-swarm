@@ -1,0 +1,12 @@
+[package]
+name = "swarm-space"
+version = "0.1.0"
+edition = "2024"
+rust-version.workspace = true
+
+[dependencies]
+bevy_ecs = "0.18.1"
+bevy_math = "0.18.1"
+ron = "0.12.1"
+serde = { version = "1.0.228", features = ["derive"] }
+swarm-model = { path = "../swarm-model" }

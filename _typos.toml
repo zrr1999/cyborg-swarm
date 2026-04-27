@@ -1,0 +1,6 @@
+[files]
+extend-exclude = ["Cargo.lock", "terminals/"]
+
+[default.extend-words]
+# "thr" is used as a local variable abbreviation for "threshold"
+thr = "thr"

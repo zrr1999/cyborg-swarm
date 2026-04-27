@@ -1,0 +1,28 @@
+[package]
+name = "hive-war"
+version = "0.1.0"
+edition = "2024"
+rust-version.workspace = true
+default-run = "hive-war"
+
+[dependencies]
+swarm-combat = { path = "../swarm-combat" }
+swarm-growth = { path = "../swarm-growth" }
+swarm-model = { path = "../swarm-model" }
+swarm-sim = { path = "../swarm-sim" }
+swarm-space = { path = "../swarm-space" }
+swarm-tactics = { path = "../swarm-tactics" }
+bevy = { workspace = true }
+bevy_egui = "0.39.1"
+bevy_hanabi = "0.18.0"
+rand = { workspace = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+tract-onnx = { version = "0.22.1", default-features = false }
+
+# WASM: the upgraded graph pulls `getrandom` through both the Bevy 0.18 line
+# (`0.3`) and the rand 0.10 line (`0.4`), so enable the browser backend on
+# each version that appears in the resolved graph.
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom_03 = { package = "getrandom", version = "0.3", features = ["wasm_js"] }
+getrandom_04 = { package = "getrandom", version = "0.4", features = ["wasm_js"] }

@@ -1,0 +1,11 @@
+[package]
+name = "swarm-growth"
+version = "0.1.0"
+edition = "2024"
+rust-version.workspace = true
+
+[dependencies]
+bevy = { workspace = true }
+bevy_ecs = "0.18.1"
+rand = { workspace = true }
+swarm-model = { path = "../swarm-model" }

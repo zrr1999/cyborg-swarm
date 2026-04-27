@@ -1,0 +1,18 @@
+[package]
+name = "squad-strike"
+version = "0.1.0"
+edition = "2024"
+rust-version.workspace = true
+
+[dependencies]
+bevy = { workspace = true }
+bevy_egui = "0.39.1"
+rand = { workspace = true }
+ron = "0.12.1"
+serde = { version = "1.0.228", features = ["derive"] }
+swarm-combat = { path = "../swarm-combat" }
+swarm-growth = { path = "../swarm-growth" }
+swarm-model = { path = "../swarm-model" }
+swarm-sim = { path = "../swarm-sim" }
+swarm-space = { path = "../swarm-space" }
+swarm-tactics = { path = "../swarm-tactics" }

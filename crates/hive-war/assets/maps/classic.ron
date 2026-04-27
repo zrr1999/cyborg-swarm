@@ -1,0 +1,12 @@
+(
+    id: "classic",
+    name: "四象风眼",
+    bases: [
+        (role: Player, x: -380.0, y: 0.0),
+        (role: Enemy, x: 380.0, y: 0.0),
+        (role: Neutral, x: -165.0, y: 145.0, hint: "nw"),
+        (role: Neutral, x: 165.0, y: 145.0, hint: "ne"),
+        (role: Neutral, x: -165.0, y: -145.0, hint: "sw"),
+        (role: Neutral, x: 165.0, y: -145.0, hint: "se"),
+    ],
+)

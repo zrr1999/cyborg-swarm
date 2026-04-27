@@ -1,0 +1,21 @@
+(
+    map_id: "classic",
+    max_unit_level: 5,
+    world_half_w: 480.0,
+    world_half_h: 270.0,
+    unit_radius: 5.0,
+    base_radius: 28.0,
+    player_mutation_sigma: 0.10,
+    enemy_mutation_sigma: 0.08,
+    alpha: 0.70,
+    dead_rolling_n: 50,
+    base_spawn_interval: 2.0,
+    base_max_units: 40,
+    population_optimizer: (
+        algorithm: grey_wolf,
+        grey_wolf: (
+            initial_a: 2.0,
+            a_decay_per_generation: 0.02,
+        ),
+    ),
+)

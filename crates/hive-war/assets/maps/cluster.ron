@@ -1,0 +1,14 @@
+(
+    id: "cluster",
+    name: "蜂巢环带",
+    bases: [
+        (role: Player, x: -395.0, y: 0.0),
+        (role: Enemy, x: 395.0, y: 0.0),
+        (role: Neutral, x: 128.0, y: 0.0, hint: "h0"),
+        (role: Neutral, x: 64.0, y: 110.85, hint: "h1"),
+        (role: Neutral, x: -64.0, y: 110.85, hint: "h2"),
+        (role: Neutral, x: -128.0, y: 0.0, hint: "h3"),
+        (role: Neutral, x: -64.0, y: -110.85, hint: "h4"),
+        (role: Neutral, x: 64.0, y: -110.85, hint: "h5"),
+    ],
+)

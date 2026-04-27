@@ -1,0 +1,13 @@
+[project]
+name = "captain-train"
+version = "0.1.0"
+description = "Behavior cloning + ONNX export for swarm-sim captain JSONL"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.26",
+    "onnxscript>=0.1",
+    "torch>=2.2",
+]
+
+[tool.uv]
+package = false

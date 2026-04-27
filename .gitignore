@@ -1,0 +1,38 @@
+# Rust / Cargo
+/target/
+
+# Frontend / wasm build output (if added later)
+/dist/
+/wavedash-dist/
+/pkg/
+
+# Coverage
+lcov.info
+*.profraw
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# JavaScript (wasm / web tooling)
+node_modules/
+
+# Python (tools/captain_train)
+tools/captain_train/.venv/
+**/__pycache__/
+
+# Cursor — machine-local hook state (not shared team config)
+.cursor/hooks/state/
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Logs & temp
+*.log
+tmp/
+scratch/

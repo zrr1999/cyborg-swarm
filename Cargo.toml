@@ -1,0 +1,24 @@
+[workspace]
+members = ["crates/hive-war", "crates/squad-strike", "crates/swarm-model", "crates/swarm-space", "crates/swarm-combat", "crates/swarm-tactics", "crates/swarm-growth", "crates/swarm-sim"]
+resolver = "2"
+default-members = ["crates/hive-war"]
+
+[workspace.package]
+rust-version = "1.90"
+
+[workspace.dependencies]
+bevy = { version = "0.18.1", features = ["webgpu"] }
+rand = "0.10.1"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+
+# Faster debug builds
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
