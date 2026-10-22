@@ -88,7 +88,7 @@ fn status_pill(
 
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(4, 12, 20, 140))
-        .stroke(egui::Stroke::new(1.0, color.gamma_multiply(0.6)))
+        .stroke(egui::Stroke::new(1.0_f32, color.gamma_multiply(0.6)))
         .corner_radius(10.0)
         .inner_margin(egui::Margin::symmetric(10, 4))
         .show(ui, |ui| {
@@ -110,7 +110,7 @@ fn resource_pill(
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(7, 20, 31, 96))
         .stroke(egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(124, 234, 255, 28),
         ))
         .corner_radius(999.0)
@@ -151,7 +151,7 @@ fn beacon_pill(ui: &mut egui::Ui, beacon_state: &crate::plugins::beacons::Beacon
     };
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(7, 20, 31, 104))
-        .stroke(egui::Stroke::new(1.0, accent))
+        .stroke(egui::Stroke::new(1.0_f32, accent))
         .corner_radius(999.0)
         .inner_margin(egui::Margin::symmetric(10, 4))
         .show(ui, |ui| {

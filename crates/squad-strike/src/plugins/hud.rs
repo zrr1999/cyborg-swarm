@@ -258,7 +258,7 @@ fn hud_system(
                 egui::Frame::new()
                     .fill(egui::Color32::from_rgba_unmultiplied(6, 10, 16, 236))
                     .stroke(egui::Stroke::new(
-                        1.0,
+                        1.0_f32,
                         egui::Color32::from_rgb(112, 180, 255),
                     ))
                     .corner_radius(18.0)
@@ -320,7 +320,7 @@ fn show_evolution_lab(
         .show(ctx, |ui| {
             egui::Frame::new()
                 .fill(egui::Color32::from_rgba_unmultiplied(7, 10, 15, 238))
-                .stroke(egui::Stroke::new(1.0, accent.gamma_multiply(0.8)))
+                .stroke(egui::Stroke::new(1.0_f32, accent.gamma_multiply(0.8)))
                 .corner_radius(12.0)
                 .inner_margin(egui::Margin::symmetric(16, 14))
                 .show(ui, |ui| {
@@ -464,7 +464,7 @@ fn side_metric(ui: &mut egui::Ui, label: &str, value: String, icon: HudIcon) {
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(14, 20, 28, 180))
         .stroke(egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(150, 210, 255, 42),
         ))
         .corner_radius(8.0)
@@ -557,7 +557,7 @@ fn draw_evolution_links(
             } else {
                 egui::Color32::from_rgba_unmultiplied(100, 117, 142, 96)
             };
-            let width = if highlighted { 2.0 } else { 1.25 };
+            let width: f32 = if highlighted { 2.0 } else { 1.25 };
             let stroke = egui::Stroke::new(width, color);
             let start = from_rect.right_center() + egui::vec2(4.0, 0.0);
             let end = to_rect.left_center() - egui::vec2(4.0, 0.0);
@@ -626,7 +626,7 @@ fn evolution_node_button(
         egui::vec2(168.0, 78.0),
         egui::Button::new(egui::RichText::new(label).color(text_color))
             .fill(fill)
-            .stroke(egui::Stroke::new(1.0, stroke_color)),
+            .stroke(egui::Stroke::new(1.0_f32, stroke_color)),
     )
 }
 
@@ -644,7 +644,7 @@ fn show_evolution_inspector(
     let color = branch_color(node.branch);
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(12, 18, 27, 224))
-        .stroke(egui::Stroke::new(1.0, color.gamma_multiply(0.6)))
+        .stroke(egui::Stroke::new(1.0_f32, color.gamma_multiply(0.6)))
         .corner_radius(10.0)
         .inner_margin(egui::Margin::symmetric(12, 12))
         .show(ui, |ui| {
@@ -844,7 +844,7 @@ fn next_wave_label(wave: &WaveState, draft: &SkillDraftState) -> String {
 fn pill(ui: &mut egui::Ui, label: &str, value: &str, color: egui::Color32, icon: Option<HudIcon>) {
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(14, 20, 28, 180))
-        .stroke(egui::Stroke::new(1.0, color.gamma_multiply(0.6)))
+        .stroke(egui::Stroke::new(1.0_f32, color.gamma_multiply(0.6)))
         .corner_radius(999.0)
         .inner_margin(egui::Margin::symmetric(8, 3))
         .show(ui, |ui| {
@@ -864,7 +864,7 @@ fn stat_chip(ui: &mut egui::Ui, label: &str, value: f32) {
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(13, 18, 24, 170))
         .stroke(egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(150, 210, 255, 38),
         ))
         .corner_radius(10.0)
@@ -907,7 +907,7 @@ fn skill_choice_card(
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(15, 22, 31, 232))
         .stroke(egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(106, 167, 255, 96),
         ))
         .corner_radius(14.0)
