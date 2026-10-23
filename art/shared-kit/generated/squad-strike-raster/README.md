@@ -27,7 +27,7 @@ Source SVG mapping:
 
 Current status:
 
-- Run `just assets-sync` to regenerate this folder and copy the PNGs into
+- Run `just assets-sync` to regenerate this folder and copy the PNG files into
   `crates/squad-strike/assets/shared/generated/`.
 - Current HUD glyphs still use procedural `egui` mirrors so the game can render
   without texture-loading plumbing.
