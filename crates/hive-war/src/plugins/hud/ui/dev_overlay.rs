@@ -121,7 +121,7 @@ fn dev_window_frame() -> egui::Frame {
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(18, 22, 32, 156))
         .stroke(egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(175, 196, 214, 72),
         ))
         .corner_radius(14.0)
@@ -132,7 +132,7 @@ fn dev_section_frame() -> egui::Frame {
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(28, 34, 46, 136))
         .stroke(egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(136, 154, 174, 46),
         ))
         .corner_radius(10.0)

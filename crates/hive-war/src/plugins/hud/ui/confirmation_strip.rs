@@ -27,7 +27,7 @@ pub(super) fn show_confirmation_strip(
         egui::Frame::new()
             .fill(egui::Color32::from_rgba_unmultiplied(19, 43, 30, 116))
             .stroke(egui::Stroke::new(
-                1.0,
+                1.0_f32,
                 egui::Color32::from_rgba_unmultiplied(173, 255, 47, 112),
             ))
             .corner_radius(10.0)

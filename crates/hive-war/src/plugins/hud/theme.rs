@@ -20,7 +20,7 @@ pub(super) fn top_bar_frame() -> egui::Frame {
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(6, 14, 22, 220))
         .stroke(egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(68, 212, 224, 36),
         ))
         .inner_margin(egui::Margin::symmetric(12, 6))
@@ -30,7 +30,7 @@ pub(super) fn bottom_bar_frame() -> egui::Frame {
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(6, 14, 22, 220))
         .stroke(egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(68, 212, 224, 36),
         ))
         .inner_margin(egui::Margin::symmetric(12, 8))
@@ -42,7 +42,7 @@ pub(super) fn panel_frame() -> egui::Frame {
     egui::Frame::new()
         .fill(egui::Color32::from_rgba_unmultiplied(8, 18, 30, 200))
         .stroke(egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(68, 212, 224, 50),
         ))
         .corner_radius(14.0)
@@ -54,7 +54,7 @@ pub(super) fn section_frame() -> egui::Frame {
     egui::Frame::new()
         .fill(panel_alt_bg())
         .stroke(egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(173, 255, 47, 40),
         ))
         .corner_radius(12.0)
@@ -64,12 +64,12 @@ pub(super) fn section_frame() -> egui::Frame {
 pub(super) fn command_card_frame(active: bool) -> egui::Frame {
     let stroke = if active {
         egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(173, 255, 47, 112),
         )
     } else {
         egui::Stroke::new(
-            1.0,
+            1.0_f32,
             egui::Color32::from_rgba_unmultiplied(124, 234, 255, 36),
         )
     };
