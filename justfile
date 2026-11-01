@@ -63,7 +63,7 @@ pre-commit:
 
 # Install local git hooks via prek
 pre-commit-install:
-    uvx prek install --install-hooks --hook-type pre-commit
+    uvx prek install --prepare-hooks
 
 # Remove local git hooks installed by prek
 pre-commit-uninstall:
